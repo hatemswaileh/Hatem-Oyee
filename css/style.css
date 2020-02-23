@@ -1,2 +1,131 @@
+html {
+  font-size: 100%
+}
+
 body{
+  background-color: #f4f4f4;
+  font: 1em 'Playfair Display', Serif;
+}
+
+h1 {
+  font: 3em 'PT Sans', Sans-Serif;
+}
+
+p {
+  text-align: center;
+  margin-block-end: 2px;
+  font: 2em 'PT Sans', sans-serif;
+}
+
+.description {
+  text-align: center;
+  background-color: gray;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+#title{
+  text-align: center;
+}
+
+form {
+  background-color: #ececec;
+  padding: 1em;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 500px
+  padding: 1em;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 50%
+  align-item: center;
+  margin-bottom: 15px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+select {
+  padding: 8px 5px;
+}
+
+.input-group label {
+  display: block;
+  padding-left: 15px
+  padding-bottom: 5px;
+  text-indent: -15px;
+  text-align: left
+}
+
+.input-group input {
+  width: 13px;
+  height: 13px
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -3;
+  text-align: left;
+}
+
+#submit {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+    grid-column: 4/4;
+    margin-right: 8%;
+}
+
+#submit:hover {
+  background-color: black;
+  color: whitesmoke;
+  border-color: gray;
+}
+
+#all-in-one,
+#radio-buttons,
+#dropdown-list,
+#checkboxes,
+#text-area{
+  border:2px solid gray;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em;
+}
+
+@media (min-width: 400px) {
+  .form-group {
+    display: grid;
+    grid-template-columns: 200px lfr;
+    grid-gap: 16px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+  }
+  .form-group p {
+    margin-block-end: 1em;
+  }
+
+  label,
+  .form-group p {
+    text-align: left;
+    grid-column: 1 / 2;
+    align-items: start;
+  }
+
+  input,
+  submit,
+  .input-group {
+    margin-bottom: 0;
+  }
 }
